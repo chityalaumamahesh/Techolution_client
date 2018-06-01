@@ -1,0 +1,7 @@
+<div class="dropdown">
+  <input class="btn btn-success dropdown-btn " readonly   [(ngModel)]='selecteditem' (click)="hidedrop = ! hidedrop"  />
+  <i class="fa fa-caret-down"></i>
+  <ul class="dropdown-content" [hidden]='hidedrop'>
+<li align="left" *ngFor="let item of items" (click)="selectItem(item)">{{item}}</li>
+</ul>
+</div>
